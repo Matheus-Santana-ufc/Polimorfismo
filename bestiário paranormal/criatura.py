@@ -7,3 +7,8 @@ class Criatura:
 
         for nome, descricao in self.bestiario.items():
             print(f'{nome}: {descricao}')
+
+    def adicionar_criatura(self):
+        nome = input('Digite o nome da criatura: ').capitalize()
+        descricao = input('Digite uma breve descrição da criatura: ')
+        self.bestiario.update({nome: descricao})

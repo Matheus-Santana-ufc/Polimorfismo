@@ -1,4 +1,3 @@
-from criatura import Criatura
 from conhecimento import Conhecimento
 from energia import Energia
 from sangue import Sangue
@@ -7,6 +6,11 @@ from morte import Morte
 def processar_elemento(bestiario):
     elemento_paranormal = bestiario({})
     elemento_paranormal.exibir_bestiario()
+    opcao = input()
+    if opcao == '1':
+        elemento_paranormal.adicionar_criatura()
+    else:
+        pass
 
 if __name__ == '__main__':
     while True:
