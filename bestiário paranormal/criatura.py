@@ -12,3 +12,8 @@ class Criatura:
         nome = input('Digite o nome da criatura: ').capitalize()
         descricao = input('Digite uma breve descrição da criatura: ')
         self.bestiario.update({nome: descricao})
+
+    def remover_criatura(self):
+        nome = input('Digite o nome da criatura: ').capitalize()
+        if nome in self.bestiario:
+            self.bestiario.pop(nome)

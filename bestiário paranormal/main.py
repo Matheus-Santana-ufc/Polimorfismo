@@ -9,6 +9,8 @@ def processar_elemento(bestiario):
     opcao = input()
     if opcao == '1':
         elemento_paranormal.adicionar_criatura()
+    elif opcao == '2':
+        elemento_paranormal.remover_criatura()
     else:
         pass
 
